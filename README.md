@@ -33,7 +33,6 @@ In order to learn C# I created TicTacToe in the language. First I created it in 
 * [Arnold Higuit's C# AutoCAD Programming Tutorial](https://www.youtube.com/c/ArnoldHiguit)
 
 ## Future Work
-* Figure out how to change text size
 * Change DrawLine to DrawPolyline so that I can controll width of lines
 * Figure out how to make letters not crash the console edition
 * Combine Active and DrawObjects and come up with a better name.

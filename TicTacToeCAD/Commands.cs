@@ -13,7 +13,7 @@ namespace TicTacToeCAD
         [CommandMethod("TICTACTOE")]
         public void TicTacToe()
         {
-            DrawObjects.TextStyleSize();
+            // DrawObjects.TextStyleSize();
 
             Board board = new Board();
             Player player = new Player();
@@ -39,7 +39,7 @@ namespace TicTacToeCAD
         [CommandMethod("PRACTICE")]
         public void Practice()
         {
-            DrawObjects.TextStyleSize();
+            // DrawObjects.TextStyleSize();
             DrawObjects.DrawText("Hello World!", 0, 0);
         }
 

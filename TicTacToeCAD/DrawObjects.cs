@@ -90,7 +90,7 @@ namespace TicTacToeCAD
                         Contents = text,
                         Location = point,
                         Attachment = AttachmentPoint.MiddleCenter,
-                        Height = 2.5,
+                        TextHeight = 2.5,
                         //TextStyleId = TST["TicTacToe"]
                     };
 
