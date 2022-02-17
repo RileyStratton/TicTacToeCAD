@@ -10,12 +10,6 @@ namespace TicTacToeCAD
 {
     public class Commands
     {
-        [CommandMethod("HELLO")]
-        public void Hello()
-        {
-            Active.Ed.WriteMessage("\nHello World!");
-        }
-
         [CommandMethod("TICTACTOE")]
         public void TicTacToe()
         {
@@ -34,6 +28,12 @@ namespace TicTacToeCAD
             }
 
             board.DisplayTie();
+        }
+
+        [CommandMethod("HELLO")]
+        public void Hello()
+        {
+            Active.Ed.WriteMessage("\nHello World!");
         }
 
         [CommandMethod("PRACTICE")]
