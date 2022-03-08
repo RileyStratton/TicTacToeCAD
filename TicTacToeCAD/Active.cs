@@ -7,11 +7,11 @@ using Autodesk.AutoCAD.ApplicationServices;
 
 namespace TicTacToeCAD
 {
-    public static class Active
+    internal static class Active
     {
-        public static Document Doc => Application.DocumentManager.MdiActiveDocument;
-        public static Editor Ed => Doc.Editor;
-        public static Database DB => Doc.Database;
+        internal static Document Doc => Application.DocumentManager.MdiActiveDocument;
+        internal static Editor Ed => Doc.Editor;
+        internal static Database DB => Doc.Database;
 
         //public static void UsingTransaction(Action<Transaction> action)
         //{

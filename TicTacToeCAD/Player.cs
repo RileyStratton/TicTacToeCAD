@@ -5,10 +5,10 @@ namespace TicTacToeCAD
     internal class Player
     {
 
-        public char Current = 'X';
+        internal char Current = 'X';
 
 
-        public void TakeTurn(char[] squares)
+        internal void TakeTurn(char[] squares)
         {
             DrawObjects.DrawText("Player " + Current + "'s turn.", 1.5, 0.5);
 
@@ -17,7 +17,7 @@ namespace TicTacToeCAD
             squares[results] = Current;
         }
 
-        public void SwitchPlayer()
+        internal void SwitchPlayer()
         {
             if (Current == 'X') { Current = 'O'; }
             else if (Current == 'O') { Current = 'X'; }

@@ -3,18 +3,18 @@ using System.Collections.Generic;
 
 namespace TicTacToeCAD
 {
-    public class Board
+    internal class Board
     {
 
-        public char[] Squares = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
-        public Dictionary<int, double[]> SquareXY = new Dictionary<int, double[]>();
+        internal char[] Squares = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
+        internal Dictionary<int, double[]> SquareXY = new Dictionary<int, double[]>();
 
         
 
-        public int Win1;
-        public int Win2;
+        internal int Win1;
+        internal int Win2;
 
-        public Board()
+        internal Board()
         {
             SquareXY.Add(1, new double[2] { 0.5, -0.5 });
             SquareXY.Add(2, new double[2] { 1.5, -0.5 });
@@ -29,7 +29,7 @@ namespace TicTacToeCAD
 
 
 
-        public void DisplayBoard()
+        internal void DisplayBoard()
         {
             // Vertical lines
             DrawObjects.DrawLine(1, 0, 1, -3);
@@ -46,7 +46,7 @@ namespace TicTacToeCAD
             }
         }
 
-        public bool WinCheck(char Current)
+        internal bool WinCheck(char Current)
         {
             if (Squares[1] == Current & Squares[2] == Current & Squares[3] == Current) { Win1 = 1; Win2 = 3; return true;}
             else if (Squares[4] == Current & Squares[5] == Current & Squares[6] == Current) { Win1 = 4; Win2 = 6; return true; }
@@ -65,7 +65,7 @@ namespace TicTacToeCAD
             else { return false; }
         }
 
-        public void DisplayWinner(char Current)
+        internal void DisplayWinner(char Current)
         {
             DrawObjects.EraseAll();
             DisplayBoard();
@@ -73,7 +73,7 @@ namespace TicTacToeCAD
             DrawObjects.DrawText("Player " + Current + " wins!", 1.5, 0.5);
         }
 
-        public void DisplayTie()
+        internal void DisplayTie()
         {
             DrawObjects.EraseAll();
             DisplayBoard();

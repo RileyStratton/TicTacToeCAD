@@ -8,10 +8,10 @@ using Autodesk.AutoCAD.ApplicationServices;
 
 namespace TicTacToeCAD
 {
-    public class Commands
+    public static class Commands
     {
         [CommandMethod("TICTACTOE")]
-        public void TicTacToe()
+        public static void TicTacToe()
         {
             // DrawObjects.TextStyleSize();
 
@@ -31,13 +31,13 @@ namespace TicTacToeCAD
         }
 
         [CommandMethod("HELLO")]
-        public void Hello()
+        public static void Hello()
         {
             Active.Ed.WriteMessage("\nHello World!");
         }
 
         [CommandMethod("PRACTICE")]
-        public void Practice()
+        public static void Practice()
         {
             // DrawObjects.TextStyleSize();
             DrawObjects.DrawText("Hello World!", 0, 0);

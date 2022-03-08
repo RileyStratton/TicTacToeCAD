@@ -11,7 +11,7 @@ In order to learn C# I created TicTacToe in the language. First I created it in 
 
 ### AutoCAD Edition
 * __Commands.cs:__ This contains all of the commands that can be run from inside of AutoCAD and the functions that they will call. The command "TICTACTOE" will call the TicTacToe function and start the game!
-* __Active.cs:__ This is a static helper class. It instantiates three variables that are called repeatedly, being the active Document, Database, and Editor.
+* __Active.cs:__ This is a static helper class. It instantiates three lambda variables that are called repeatedly, being the active Document, Database, and Editor. It is also resonsible for any drawing in AutoCAD.
 * __DrawObjects.cs:__ This is another static helper class. True to it's name, it is reponsible for drawing lines and text in AutoCAD. Not as true to it's name, it also contains functions to get user selection, erase all objects, and set text size.
 * __Board.cs:__ This class does the same thing as in the console edition, but through calls to draw objects in AutoCAD.
 * __Player.cs:__ This class does the same thing as in the console edition, but through calls to select objects in AutoCAD.
@@ -20,8 +20,8 @@ In order to learn C# I created TicTacToe in the language. First I created it in 
 
 ## Development Environment
 * __Visual Studio Community (IDE):__ An IDE with strong support for C# and including external files in your project.
-* __.NET 6.0 (C#):__ A development framework with long term support that includes C# (used for console edition).
-* __.NET 4.8 (C#):__ The .NET framework currently supported by AutoCAD. (used for AutoCAD edition).
+* __.NET 6.0 Standard (C#):__ A development framework with long term support that includes C# (used for console edition).
+* __.NET 4.8 Framework (C#):__ The .NET framework currently supported by AutoCAD. (used for AutoCAD edition).
 * __AutoCAD 2022:__ Student trial of AutoCAD to test the development of plugins.
 * __ObjectARX SDK:__ A software development kit that assists in developing plugins for AutoCAD.
 

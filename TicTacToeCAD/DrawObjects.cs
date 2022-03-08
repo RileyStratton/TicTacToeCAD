@@ -6,13 +6,13 @@ using Autodesk.AutoCAD.DatabaseServices;
 namespace TicTacToeCAD
 {
 
-    public static class DrawObjects
+    internal static class DrawObjects
     {
-        public static double OriginX = 17.5;
-        public static double OriginY = 17.5;
-        public static double scale = 5;
+        internal static double OriginX = 17.5;
+        internal static double OriginY = 17.5;
+        internal static double scale = 5;
 
-        public static void TextStyleSize()
+        internal static void TextStyleSize()
         {
             try
             {
@@ -37,7 +37,7 @@ namespace TicTacToeCAD
             }
         }
         
-        public static void DrawLine(double x1, double y1, double x2, double y2)
+        internal static void DrawLine(double x1, double y1, double x2, double y2)
         {
             try
             {
@@ -67,7 +67,7 @@ namespace TicTacToeCAD
 
         }
 
-        public static void DrawText(string text, double x, double y)
+        internal static void DrawText(string text, double x, double y)
         {
             try
             {
@@ -106,7 +106,7 @@ namespace TicTacToeCAD
             }
         }
 
-        public static void EraseAll()
+        internal static void EraseAll()
         {
             try
             {
@@ -139,7 +139,7 @@ namespace TicTacToeCAD
             }
         }
 
-        public static int SelectSquare(string prompt)
+        internal static int SelectSquare(string prompt)
         {
             while (true)
             {
